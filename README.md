@@ -10,12 +10,15 @@ Reads Xiaomi/Mijia bluetooth thermo sensors from a raspberri pi and diplays on a
 
 # Files
 thermometer_harvester.sh
+
 Goes through a list of bluetooth MAC addresses of Xiaomi Mijia bluetooth thermo sensors and queries them for their temperature and humidity readings.
 All readings including their bluetooth blurb are stored in a file called "Thermometer.csv".
 I usually run this every 15 min as a cron job
 
 epaper_thermometer.py
+
 Plots temperatures read by thermometer_harvester.sh on a Waveshare e-ink display. This file is based on the Waveshare Python template of the 7.5 inch display in HAT version
 
 temperature_plotter.py
-Plots temperatures in python in various formats and tricks
+
+Plots temperatures in Python 3 with Pandas in various formats and tricks
