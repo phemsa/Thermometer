@@ -55,8 +55,6 @@ class Readings():
 
         self.df["time"] = pd.to_datetime(self.df["time"], unit='s')
         self.df['sensor'].replace(sensorNames, inplace=True)
-        #self.df.sort_values(by=['sensor', 'time'], inplace=True, ignore_index=True)
-        #self.df.drop('hum', axis=1, inplace=True)
         self.temp = self.df.pivot_table(index="time", columns="sensor", values="temp")
         self.hum = self.df.pivot_table(index="time", columns="sensor", values="hum")
 
