@@ -1,5 +1,5 @@
 # Thermometer
-Bash/Python script to read Xiaomi/Mijia bluetooth thermometers and diplay values on a Waveshare e-ink display.
+Bash/Python scripts to read Xiaomi/Mijia bluetooth thermometers and diplay values on a Waveshare e-ink display.
 
 # Components
 - A Raspberri Pi (I am using a Pi Zero WH) with bluetooth enabled and gatttool (should be there out of the box)
