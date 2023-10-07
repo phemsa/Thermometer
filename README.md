@@ -1,8 +1,8 @@
 # Thermometer
-Reads Xiaomi/Mijia bluetooth thermo sensors from a raspberri pi and diplays on a Waveshare e-ink display
+Bash/Python script to read Xiaomi/Mijia bluetooth thermometers and diplay values on a Waveshare e-ink display.
 
 # Components
-- A Raspberri Pi (I am using a Pi Zero WH) with bluetooth enabled and gatttool (should on there out of the box)
+- A Raspberri Pi (I am using a Pi Zero WH) with bluetooth enabled and gatttool (should be there out of the box)
 - Xiaomi Mijia Bluetooth 2 Wireless Thermometer (LYWSD03MMC)
 - If you want to display, a Waveshare E-ink Display (I am using a Waveshare 7.5inch HD e-Paper HAT)
 - The Waveshare python libraries for your respective display e.g. from https://www.waveshare.com/wiki/7.5inch_e-Paper_HAT
@@ -12,7 +12,7 @@ Reads Xiaomi/Mijia bluetooth thermo sensors from a raspberri pi and diplays on a
 thermometer_harvester.sh
 
 Goes through a list of bluetooth MAC addresses of Xiaomi Mijia bluetooth thermo sensors and queries them for their temperature and humidity readings.
-All readings including their bluetooth blurb are stored in a file called "Thermometer.csv".
+All readings are stored in a file called "Thermometer.csv".
 I usually run this every 15 min as a cron job
 
 epaper_thermometer.py
